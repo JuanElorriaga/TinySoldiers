@@ -1,0 +1,78 @@
+[gd_scene load_steps=13 format=3 uid="uid://xo4dehlyacep"]
+
+[ext_resource type="Script" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd" id="1_hnbmv"]
+[ext_resource type="PackedScene" uid="uid://dgihke0p7btge" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn" id="2_xpm4p"]
+[ext_resource type="Texture2D" uid="uid://daakmyjvljoi4" path="res://Tiny Swords/Tiny Swords (Update 010)/Resources/Sheep/HappySheep_All.png" id="3_frv71"]
+[ext_resource type="Script" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd" id="4_doy8y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgfpq"]
+atlas = ExtResource("3_frv71")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxn03"]
+atlas = ExtResource("3_frv71")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxexa"]
+atlas = ExtResource("3_frv71")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0sl4"]
+atlas = ExtResource("3_frv71")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k54ct"]
+atlas = ExtResource("3_frv71")
+region = Rect2(512, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oq0of"]
+atlas = ExtResource("3_frv71")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oi23g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgfpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxn03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxexa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0sl4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k54ct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oq0of")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yutve"]
+radius = 27.0
+
+[node name="Enimies" type="CharacterBody2D" groups=["enemies"]]
+position = Vector2(0, -6)
+motion_mode = 1
+script = ExtResource("1_hnbmv")
+health = 1
+death_prefab = ExtResource("2_xpm4p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_oi23g")
+autoplay = "default"
+frame_progress = 0.630745
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_yutve")
+
+[node name="FollowPlayer" type="Node" parent="."]
+script = ExtResource("4_doy8y")

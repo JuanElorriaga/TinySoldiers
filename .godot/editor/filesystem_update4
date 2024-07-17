@@ -1,0 +1,9 @@
+res://principal.tscn
+res://sprite.tscn
+res://player.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/test_health.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/goblin.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/Sheep.tscn
+res://player.gd
