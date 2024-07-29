@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ch24a20efnpk3"]
+[gd_scene load_steps=6 format=3 uid="uid://ch24a20efnpk3"]
 
 [ext_resource type="PackedScene" uid="uid://bfli1n641jiyy" path="res://player.tscn" id="1_rju64"]
 [ext_resource type="PackedScene" uid="uid://dvv2qipj8p0d1" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn" id="2_wnnfh"]
 [ext_resource type="PackedScene" uid="uid://xo4dehlyacep" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/Sheep.tscn" id="3_5j5ar"]
 [ext_resource type="PackedScene" uid="uid://8kbyx4pd8jhm" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/goblin.tscn" id="4_w8exp"]
+[ext_resource type="PackedScene" uid="uid://d1slwf2ev7qbi" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn" id="5_ktr1f"]
 
 [node name="TestHealth" type="Node2D"]
 
@@ -11,28 +12,52 @@
 position = Vector2(568, 316)
 
 [node name="Enimies" parent="." instance=ExtResource("2_wnnfh")]
-position = Vector2(2405, 302)
+position = Vector2(2399, 118)
 
 [node name="Enimies2" parent="." instance=ExtResource("2_wnnfh")]
-position = Vector2(4397, 1172)
+position = Vector2(1700, 717)
 
 [node name="Enimies3" parent="." instance=ExtResource("2_wnnfh")]
-position = Vector2(1463, 373)
+position = Vector2(1870, 189)
 
 [node name="Enimies4" parent="." instance=ExtResource("3_5j5ar")]
-position = Vector2(73, 475)
+position = Vector2(-327, 202)
 
 [node name="Enimies5" parent="." instance=ExtResource("3_5j5ar")]
-position = Vector2(51, 606)
+position = Vector2(-349, 333)
 
 [node name="Enimies6" parent="." instance=ExtResource("3_5j5ar")]
-position = Vector2(-358, 599)
+position = Vector2(-758, 326)
 
 [node name="Enimies7" parent="." instance=ExtResource("4_w8exp")]
-position = Vector2(-337, 385)
+position = Vector2(-737, 112)
 
 [node name="Enimies8" parent="." instance=ExtResource("4_w8exp")]
-position = Vector2(-718, 403)
+position = Vector2(-1118, 130)
 
 [node name="Enimies9" parent="." instance=ExtResource("4_w8exp")]
-position = Vector2(-929, 720)
+position = Vector2(-1329, 447)
+
+[node name="Enimies10" parent="." instance=ExtResource("3_5j5ar")]
+position = Vector2(960, -883)
+
+[node name="Enimies11" parent="." instance=ExtResource("3_5j5ar")]
+position = Vector2(938, -752)
+
+[node name="Enimies12" parent="." instance=ExtResource("3_5j5ar")]
+position = Vector2(529, -759)
+
+[node name="Enimies13" parent="." instance=ExtResource("4_w8exp")]
+position = Vector2(550, -973)
+
+[node name="Enimies14" parent="." instance=ExtResource("4_w8exp")]
+position = Vector2(169, -955)
+
+[node name="Enimies15" parent="." instance=ExtResource("4_w8exp")]
+position = Vector2(-42, -638)
+
+[node name="Skull" parent="." instance=ExtResource("5_ktr1f")]
+position = Vector2(852, 551)
+
+[node name="Skull2" parent="." instance=ExtResource("5_ktr1f")]
+position = Vector2(338, 482)

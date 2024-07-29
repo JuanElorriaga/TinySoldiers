@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxxfswu8ujs50"]
+
+[ext_resource type="PackedScene" uid="uid://dty208rxb2jdf" path="res://Tiny Swords/Tiny Swords (Update 010)/System/mob_spawner.tscn" id="2_dejn2"]
+
+[node name="TestMobSpawner" type="Node2D"]
+
+[node name="MobSpawner" parent="." instance=ExtResource("2_dejn2")]
+mobs_per_minute = 10.0

@@ -1,14 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721177781
-game_manager.gd::GDScript::-1::1720652979::0::1::::<>Node<>::
+::res://::1722219188
+game_manager.gd::GDScript::-1::1722205251::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::8554084376716876621::1718929563::1718929953::1::::<><>::
-player.gd::GDScript::-1::1721172814::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::2760605955806804144::1721177781::0::1::::<><>::res://player.gd<>uid://jvytqy6mfqon::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png
-principal.tscn::PackedScene::7147070432557679821::1721177781::0::1::::<><>::
-sprite.tscn::PackedScene::1750543181522866075::1721177781::0::1::::<><>::uid://bfli1n641jiyy::::res://player.tscn<>uid://dvv2qipj8p0d1::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn
+main.tscn::PackedScene::5934800753254048344::1722219069::0::1::::<><>::uid://bfli1n641jiyy::::res://player.tscn<>uid://dxxfswu8ujs50::::res://Tiny Swords/Tiny Swords (Update 010)/System/test_mobspawner.tscn<>uid://bbxitago7p8xv::::res://Tiny Swords/Tiny Swords (Update 010)/game_ui.tscn<>uid://cyg0n7cfp6c4t::::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png
+player.gd::GDScript::-1::1722208710::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::2760605955806804144::1722218220::0::1::::<><>::res://player.gd<>uid://jvytqy6mfqon::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png<>uid://bealttb18egkt::::res://Tiny Swords/Tiny Swords (Update 010)/misc/BigSkull.tscn
+principal.tscn::PackedScene::7147070432557679821::1722218220::0::1::::<><>::
+sprite.tscn::PackedScene::1750543181522866075::1722122063::0::1::::<><>::uid://bfli1n641jiyy::::res://player.tscn<>uid://dvv2qipj8p0d1::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn
 ::res://Tiny Swords/::1720638828
-::res://Tiny Swords/Tiny Swords (Update 010)/::1721177782
-test_health.tscn::PackedScene::5321663721941786532::1721177782::0::1::::<><>::uid://bfli1n641jiyy::::res://player.tscn<>uid://dvv2qipj8p0d1::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn
+::res://Tiny Swords/Tiny Swords (Update 010)/::1722218221
+game_ui.gd::GDScript::-1::1722217958::0::1::::<>CanvasLayer<>::
+game_ui.tscn::PackedScene::2504609891649146719::1722218221::0::1::::<><>::uid://b25l58ii4phgf::::res://Tiny Swords/Tiny Swords (Update 010)/UI/Banners/Banner_Horizontal.png<>res://Tiny Swords/Tiny Swords (Update 010)/game_ui.gd<>uid://c4s8iuxxkx4uv::::res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tres<>uid://dm5xpvyv1p2ne::::res://Tiny Swords/Tiny Swords (Update 010)/Resources/Resources/M_Idle.png
+test_health.tscn::PackedScene::5321663721941786532::1722218221::0::1::::<><>::uid://bfli1n641jiyy::::res://player.tscn<>uid://dvv2qipj8p0d1::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn<>uid://xo4dehlyacep::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/Sheep.tscn<>uid://8kbyx4pd8jhm::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/goblin.tscn<>uid://d1slwf2ev7qbi::::res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn
 ::res://Tiny Swords/Tiny Swords (Update 010)/Deco/::1719875599
 01.png::CompressedTexture2D::1768987943798906234::1666996368::1718932280::1::::<><>::
 02.png::CompressedTexture2D::8379657546802747541::1666996368::1718932281::1::::<><>::
@@ -34,11 +37,11 @@ test_health.tscn::PackedScene::5321663721941786532::1721177782::0::1::::<><>::ui
 Explosions.png::CompressedTexture2D::1468023202740358609::1667423219::1718932284::1::::<><>::
 ::res://Tiny Swords/Tiny Swords (Update 010)/Effects/Fire/::1718932283
 Fire.png::CompressedTexture2D::6998672034334927978::1667938719::1718932283::1::::<><>::
-::res://Tiny Swords/Tiny Swords (Update 010)/enemies/::1721177782
-enemy1.tscn::PackedScene::8678248075632915276::1721177781::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd<>uid://dl3xjevjl4tx6::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Purple/Barrel_Purple.png<>uid://dgihke0p7btge::::res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn<>res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd
-enemy.gd::GDScript::-1::1721160775::0::1::::Enemy<>Node2D<>::
-goblin.tscn::PackedScene::2336980447165379830::1721177782::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd<>uid://dgihke0p7btge::::res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn<>uid://bpm0hl6xkdhxs::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Purple/Torch_Purple.png<>res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd
-Sheep.tscn::PackedScene::1645011063842419519::1721177836::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd<>uid://dgihke0p7btge::::res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn<>uid://dl3xjevjl4tx6::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Purple/Barrel_Purple.png<>res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd
+::res://Tiny Swords/Tiny Swords (Update 010)/enemies/::1722122064
+enemy1.tscn::PackedScene::8678248075632915276::1722122064::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd<>uid://dl3xjevjl4tx6::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Purple/Barrel_Purple.png<>uid://dgihke0p7btge::::res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn<>res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd
+enemy.gd::GDScript::-1::1722121964::0::1::::Enemy<>Node2D<>::
+goblin.tscn::PackedScene::2336980447165379830::1722122064::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd<>uid://dgihke0p7btge::::res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn<>uid://bpm0hl6xkdhxs::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Purple/Torch_Purple.png<>res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd
+Sheep.tscn::PackedScene::1645011063842419519::1722122064::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd<>uid://dgihke0p7btge::::res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn<>uid://daakmyjvljoi4::::res://Tiny Swords/Tiny Swords (Update 010)/Resources/Sheep/HappySheep_All.png<>res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd
 ::res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/::1720811494
 followPlayer.gd::GDScript::-1::1720811494::0::1::::<>Node<>::
 ::res://Tiny Swords/Tiny Swords (Update 010)/Factions/::1667505022
@@ -148,8 +151,13 @@ Warrior_Purple.png::CompressedTexture2D::1390451731311255701::1663159815::171893
 Warrior_Red.png::CompressedTexture2D::2385507806986530793::1663159876::1718932304::1::::<><>::
 ::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Yellow/::1718932288
 Warrior_Yellow.png::CompressedTexture2D::9109271921116430377::1663159941::1718932288::1::::<><>::
-::res://Tiny Swords/Tiny Swords (Update 010)/misc/::1721177782
-skull.tscn::PackedScene::7597353261266256452::1721177782::0::1::::<><>::uid://das7ym0sb6ohm::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
+::res://Tiny Swords/Tiny Swords (Update 010)/misc/::1722205040
+BigSkull.tscn::PackedScene::2667878875963896495::1722122065::0::1::::<><>::uid://dgihke0p7btge::::res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn
+Damage_Digit.gd::GDScript::-1::1722118360::0::1::::<>Node2D<>::
+Damage_Digit.tscn::PackedScene::4622901256997586655::1722122066::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/misc/Damage_Digit.gd<>uid://c4s8iuxxkx4uv::::res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tres
+LifeRegenerator.gd::GDScript::-1::1722205040::0::1::::<>Node2D<>::
+meat.tscn::PackedScene::9022038264165110906::1722122065::0::1::::<><>::uid://rb4uu176jn5n::::res://Tiny Swords/Tiny Swords (Update 010)/Resources/Resources/M_Spawn.png<>res://Tiny Swords/Tiny Swords (Update 010)/misc/LifeRegenerator.gd
+skull.tscn::PackedScene::7597353261266256452::1722122064::0::1::::<><>::uid://das7ym0sb6ohm::::res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
 ::res://Tiny Swords/Tiny Swords (Update 010)/PLayer/::1719081619
 ::res://Tiny Swords/Tiny Swords (Update 010)/Resources/::1663162591
 ::res://Tiny Swords/Tiny Swords (Update 010)/Resources/Gold Mine/::1718932285
@@ -172,6 +180,10 @@ HappySheep_Bouncing.png::CompressedTexture2D::4843210951777330507::1659721853::1
 HappySheep_Idle.png::CompressedTexture2D::6345388286798234774::1659721821::1718932288::1::::<><>::
 ::res://Tiny Swords/Tiny Swords (Update 010)/Resources/Trees/::1718932289
 Tree.png::CompressedTexture2D::2209112583342567876::1659715207::1718932289::1::::<><>::
+::res://Tiny Swords/Tiny Swords (Update 010)/System/::1722218222
+mob_spawner.tscn::PackedScene::8544080910531322647::1722122066::0::1::::<><>::res://Tiny Swords/Tiny Swords (Update 010)/System/test_mobspawner.gd<>uid://dvv2qipj8p0d1::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn<>uid://8kbyx4pd8jhm::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/goblin.tscn<>uid://xo4dehlyacep::::res://Tiny Swords/Tiny Swords (Update 010)/enemies/Sheep.tscn
+test_mobspawner.gd::GDScript::-1::1721417913::0::1::::<>Node2D<>::
+test_mobspawner.tscn::PackedScene::8821423060287806085::1722218222::0::1::::<><>::uid://dty208rxb2jdf::::res://Tiny Swords/Tiny Swords (Update 010)/System/mob_spawner.tscn
 ::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/::1667505061
 ::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Bridge/::1718932288
 Bridge_All.png::CompressedTexture2D::1378958001961364031::1659902256::1718932288::1::::<><>::
@@ -179,16 +191,18 @@ Bridge_All.png::CompressedTexture2D::1378958001961364031::1659902256::1718932288
 Shadows.png::CompressedTexture2D::445079947041486961::1662484872::1718932288::1::::<><>::
 Tilemap_Elevation.png::CompressedTexture2D::3436900806132186108::1663161376::1718932289::1::::<><>::
 Tilemap_Flat.png::CompressedTexture2D::6471302705448520573::1663161352::1718932289::1::::<><>::
-::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/::1718932290
-Water.png::CompressedTexture2D::7823875811620792263::1659724634::1718932290::1::::<><>::
+::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/::1722219188
 ::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/Foam/::1718932289
 Foam.png::CompressedTexture2D::7082638134737193263::1662490117::1718932289::1::::<><>::
-::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/Rocks/::1718932290
+::res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/Rocks/::1722219188
 Rocks_01.png::CompressedTexture2D::8693936593744538843::1659724150::1718932289::1::::<><>::
 Rocks_02.png::CompressedTexture2D::8866601723466461116::1659724161::1718932289::1::::<><>::
 Rocks_03.png::CompressedTexture2D::4199224099700786064::1659724172::1718932290::1::::<><>::
 Rocks_04.png::CompressedTexture2D::3286658849485291870::1659724184::1718932290::1::::<><>::
-::res://Tiny Swords/Tiny Swords (Update 010)/UI/::1671765541
+Water.png::CompressedTexture2D::7823875811620792263::1659724634::1722219191::1::::<><>::
+::res://Tiny Swords/Tiny Swords (Update 010)/UI/::1722218220
+test_ui.tres::LabelSettings::6847495666631570473::1722200683::0::1::::<><>::
+test_ui.tscn::PackedScene::3956227189225589865::1722218220::0::1::::<><>::uid://bfli1n641jiyy::::res://player.tscn<>uid://bbxitago7p8xv::::res://Tiny Swords/Tiny Swords (Update 010)/game_ui.tscn<>uid://d1slwf2ev7qbi::::res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn
 ::res://Tiny Swords/Tiny Swords (Update 010)/UI/Banners/::1718932268
 Banner_Connection_Down.png::CompressedTexture2D::9076308442020438998::1671766120::1718932267::1::::<><>::
 Banner_Connection_Left.png::CompressedTexture2D::8557592738382441494::1671766094::1718932267::1::::<><>::

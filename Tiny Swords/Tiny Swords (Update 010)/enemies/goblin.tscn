@@ -77,3 +77,6 @@ shape = SubResource("CircleShape2D_yutve")
 [node name="FollowPlayer" type="Node" parent="."]
 script = ExtResource("4_610do")
 speed = 0.6
+
+[node name="DamageDigitMarker" type="Marker2D" parent="."]
+position = Vector2(1, -62)

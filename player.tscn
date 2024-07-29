@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://bfli1n641jiyy"]
+[gd_scene load_steps=19 format=3 uid="uid://bfli1n641jiyy"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_excr8"]
 [ext_resource type="Texture2D" uid="uid://jvytqy6mfqon" path="res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_w7dq2"]
+[ext_resource type="PackedScene" uid="uid://bealttb18egkt" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/BigSkull.tscn" id="2_sypyc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5lcsc"]
-radius = 50.0
+radius = 38.0
 height = 114.0
 
 [sub_resource type="Animation" id="Animation_pyfb3"]
@@ -180,12 +181,22 @@ _data = {
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ru4hn"]
-radius = 68.1175
+radius = 83.006
 
-[node name="Player" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_pr8vi"]
+radius = 46.0109
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4aeju"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d70ay"]
+bg_color = Color(0.886275, 0.0235294, 0.266667, 1)
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 position = Vector2(0, -1)
 motion_mode = 1
 script = ExtResource("1_excr8")
+death_prefab = ExtResource("2_sypyc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_w7dq2")
@@ -208,3 +219,20 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SwordArea"]
 shape = SubResource("CircleShape2D_ru4hn")
 debug_color = Color(0.937255, 0.0235294, 0.615686, 0)
+
+[node name="HitBoxArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxArea"]
+shape = SubResource("CircleShape2D_pr8vi")
+debug_color = Color(0.770717, 0.444441, 9.62615e-07, 0.42)
+
+[node name="HealthProgressBar" type="ProgressBar" parent="."]
+offset_left = -35.0
+offset_top = 48.0
+offset_right = 41.0
+offset_bottom = 56.0
+theme_override_styles/background = SubResource("StyleBoxFlat_4aeju")
+theme_override_styles/fill = SubResource("StyleBoxFlat_d70ay")
+value = 100.0
+rounded = true
+show_percentage = false

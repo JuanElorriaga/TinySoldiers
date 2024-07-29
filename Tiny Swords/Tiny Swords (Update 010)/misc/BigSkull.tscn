@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bealttb18egkt"]
+
+[ext_resource type="PackedScene" uid="uid://dgihke0p7btge" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn" id="1_llawx"]
+
+[node name="Skull" instance=ExtResource("1_llawx")]
+scale = Vector2(2, 2)
+frame = 13

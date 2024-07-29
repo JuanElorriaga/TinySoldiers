@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwmoqpjcbd3y8"]
+
+[ext_resource type="PackedScene" uid="uid://bfli1n641jiyy" path="res://player.tscn" id="1_j5bap"]
+[ext_resource type="PackedScene" uid="uid://bbxitago7p8xv" path="res://Tiny Swords/Tiny Swords (Update 010)/game_ui.tscn" id="2_y3aen"]
+[ext_resource type="PackedScene" uid="uid://d1slwf2ev7qbi" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn" id="3_l5pia"]
+
+[node name="TestUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_j5bap")]
+position = Vector2(573, 321)
+
+[node name="Game_Ui" parent="." instance=ExtResource("2_y3aen")]
+
+[node name="Skull" parent="." instance=ExtResource("3_l5pia")]
+position = Vector2(974, 317)

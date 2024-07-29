@@ -1,0 +1,11 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c4s8iuxxkx4uv"]
+
+[sub_resource type="SystemFont" id="SystemFont_jeqpp"]
+font_weight = 100
+
+[resource]
+font = SubResource("SystemFont_jeqpp")
+font_size = 35
+font_color = Color(0.999773, 0.23225, 0.205995, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
