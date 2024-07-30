@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfb2myp61v0nu"]
+
+[ext_resource type="PackedScene" uid="uid://d1slwf2ev7qbi" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn" id="1_fkkfs"]
+
+[node name="Skull" instance=ExtResource("1_fkkfs")]
+modulate = Color(4.286, 0.714, 0, 1)
