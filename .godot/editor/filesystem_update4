@@ -1,14 +1,9 @@
-res://Tiny Swords/Tiny Swords (Update 010)/enemies/goblin.tscn
+res://game_over_ui.tscn
 res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tres
+res://game_over_ui.gd
+res://player.gd
 res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd
-res://Tiny Swords/Tiny Swords (Update 010)/misc/goldmeat.tscn
-res://principal.tscn
-res://player.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/game_ui.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/test_health.tscn
 res://main.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/System/test_mobspawner.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/System/mob_spawner.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn
+res://player.tscn
+res://game_manager.gd
+res://main.gd

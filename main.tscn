@@ -1,11 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://cqs4kild5xwf5"]
+[gd_scene load_steps=18 format=3 uid="uid://cqs4kild5xwf5"]
 
 [ext_resource type="PackedScene" uid="uid://bfli1n641jiyy" path="res://player.tscn" id="1_v26id"]
+[ext_resource type="Script" path="res://main.gd" id="1_wamff"]
 [ext_resource type="PackedScene" uid="uid://bbxitago7p8xv" path="res://Tiny Swords/Tiny Swords (Update 010)/game_ui.tscn" id="3_qtr76"]
 [ext_resource type="Texture2D" uid="uid://cyg0n7cfp6c4t" path="res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png" id="4_qmrss"]
 [ext_resource type="Texture2D" uid="uid://djp7dd2xj60ut" path="res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/Rocks/Water.png" id="4_vbmc5"]
 [ext_resource type="Texture2D" uid="uid://bo74iv1x1fysq" path="res://Tiny Swords/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Elevation.png" id="5_qa8on"]
 [ext_resource type="PackedScene" uid="uid://dty208rxb2jdf" path="res://Tiny Swords/Tiny Swords (Update 010)/System/mob_spawner.tscn" id="6_ok2n8"]
+[ext_resource type="Script" path="res://Tiny Swords/Tiny Swords (Update 010)/System/difficult_system.gd" id="6_wdcb6"]
+[ext_resource type="PackedScene" uid="uid://bncxk6w44p5jy" path="res://game_over_ui.tscn" id="8_4xt7o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hhacm"]
 size = Vector2(384, 1963)
@@ -223,8 +226,11 @@ sources/0 = SubResource("TileSetAtlasSource_ixdbg")
 sources/1 = SubResource("TileSetAtlasSource_lxyk5")
 sources/2 = SubResource("TileSetAtlasSource_bvp5n")
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("game_ui")]
 y_sort_enabled = true
+script = ExtResource("1_wamff")
+game_ui = NodePath("Game_Ui")
+game_over_ui_template = ExtResource("8_4xt7o")
 
 [node name="Player" parent="." instance=ExtResource("1_v26id")]
 z_index = 1
@@ -279,6 +285,10 @@ layer_2/tile_data = PackedInt32Array(-458763, 65538, 1, -393227, 65538, 1, -3276
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(594, 291)
+
+[node name="DifficultSystem" type="Node" parent="." node_paths=PackedStringArray("mob_spawner")]
+script = ExtResource("6_wdcb6")
+mob_spawner = NodePath("../MobSpawner")
 
 [node name="MobSpawner" parent="." instance=ExtResource("6_ok2n8")]
 z_index = 1

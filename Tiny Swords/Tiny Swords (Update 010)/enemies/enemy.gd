@@ -45,6 +45,8 @@ func die() -> void:
 		if randf() <= drop_chance:
 			drop_item()
 		
+		GameManager.monsters_defeated_counter += 1
+		
 		queue_free()
 
 func drop_item() -> void:
@@ -74,6 +76,6 @@ func get_random_drop_item() -> PackedScene:
 			return drop_item
 		needle += drop_chance
 	
-	return drop_itens[0]
+	return drop_itens[1]
 	
 	
