@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf0alwlg5hvfc"]
+
+[ext_resource type="Script" path="res://Tiny Swords/Tiny Swords (Update 010)/pos_menu.gd" id="1_jasxo"]
+[ext_resource type="Theme" uid="uid://c8nc2kcqylg2l" path="res://pos_menu.tres" id="1_qyjp2"]
+
+[node name="PosMenu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_jasxo")
+
+[node name="Menu_holder" type="VBoxContainer" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Menu_holder"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 0.433002, 0.192219, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "GAME PAUSED"
+
+[node name="Pause_btn" type="Button" parent="Menu_holder"]
+layout_mode = 2
+theme = ExtResource("1_qyjp2")
+text = "Resume"
+
+[node name="Quit_btn" type="Button" parent="Menu_holder"]
+layout_mode = 2
+theme = ExtResource("1_qyjp2")
+text = "Main Menu"
+
+[connection signal="pressed" from="Menu_holder/Pause_btn" to="." method="_on_pause_btn_pressed"]
+[connection signal="pressed" from="Menu_holder/Quit_btn" to="." method="_on_quit_btn_pressed"]

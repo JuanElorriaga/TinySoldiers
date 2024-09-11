@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bncxk6w44p5jy"]
+[gd_scene load_steps=11 format=3 uid="uid://bncxk6w44p5jy"]
 
 [ext_resource type="Script" path="res://game_over_ui.gd" id="1_1g4ox"]
 [ext_resource type="Texture2D" uid="uid://b25l58ii4phgf" path="res://Tiny Swords/Tiny Swords (Update 010)/UI/Banners/Banner_Horizontal.png" id="1_e1mx3"]
@@ -14,6 +14,8 @@ texture_margin_bottom = 48.0
 axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 region_rect = Rect2(32, 48, 128, 128)
+
+[sub_resource type="Theme" id="Theme_cmvss"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bi2jq"]
 texture = ExtResource("3_pcjvx")
@@ -72,9 +74,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -338.0
-offset_top = -384.0
+offset_top = -444.0
 offset_right = 350.0
-offset_bottom = -80.0
+offset_bottom = -140.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
@@ -125,14 +127,52 @@ text = "0000
 "
 label_settings = ExtResource("2_kewmw")
 
+[node name="BtnPlayAgain" type="Button" parent="BottomPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -243.0
+offset_top = 146.0
+offset_right = -71.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_cmvss")
+theme_override_colors/font_color = Color(0.942709, 4.47616e-06, 1.73271e-06, 1)
+theme_override_font_sizes/font_size = 33
+text = "Play Again"
+flat = true
+
+[node name="BtnMainMenu" type="Button" parent="BottomPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 43.5
+offset_top = 145.0
+offset_right = 230.5
+offset_bottom = 199.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_cmvss")
+theme_override_colors/font_color = Color(0.942709, 4.47616e-06, 1.73271e-06, 1)
+theme_override_font_sizes/font_size = 33
+text = "Main Menu"
+flat = true
+
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -214.0
-offset_top = 154.0
+offset_top = 94.0
 offset_right = 218.0
-offset_bottom = 284.0
+offset_bottom = 224.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_bi2jq")
 
@@ -154,3 +194,6 @@ label_settings = ExtResource("2_kewmw")
 libraries = {
 "": SubResource("AnimationLibrary_w367h")
 }
+
+[connection signal="pressed" from="BottomPanel/BtnPlayAgain" to="." method="_on_btn_play_again_pressed"]
+[connection signal="pressed" from="BottomPanel/BtnMainMenu" to="." method="_on_btn_main_menu_pressed"]

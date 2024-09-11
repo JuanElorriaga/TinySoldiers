@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvrykpj6tm2dx"
+path="res://.godot/imported/SadSong1.mp3-38d22a703429977b97ba892dd77b2b6e.mp3str"
+
+[deps]
+
+source_file="res://Tiny Swords/Tiny Swords (Update 010)/misc/SadSong1.mp3"
+dest_files=["res://.godot/imported/SadSong1.mp3-38d22a703429977b97ba892dd77b2b6e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

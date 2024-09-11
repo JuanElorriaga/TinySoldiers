@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch24a20efnpk3"]
+
+[ext_resource type="PackedScene" uid="uid://bfli1n641jiyy" path="res://player.tscn" id="1_rju64"]
+[ext_resource type="PackedScene" uid="uid://xo4dehlyacep" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/Sheep.tscn" id="3_5j5ar"]
+[ext_resource type="PackedScene" uid="uid://bout6u2fo02eo" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/finalBoss.tscn" id="4_h8ksj"]
+[ext_resource type="PackedScene" uid="uid://8kbyx4pd8jhm" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/goblin.tscn" id="4_w8exp"]
+
+[node name="TestHealth" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rju64")]
+position = Vector2(568, 316)
+
+[node name="Enimies10" parent="." instance=ExtResource("3_5j5ar")]
+position = Vector2(960, -883)
+
+[node name="Enimies11" parent="." instance=ExtResource("3_5j5ar")]
+position = Vector2(938, -752)
+
+[node name="Enimies12" parent="." instance=ExtResource("3_5j5ar")]
+position = Vector2(529, -759)
+
+[node name="Enimies13" parent="." instance=ExtResource("4_w8exp")]
+position = Vector2(550, -973)
+
+[node name="Enimies14" parent="." instance=ExtResource("4_w8exp")]
+position = Vector2(169, -955)
+
+[node name="Enimies15" parent="." instance=ExtResource("4_w8exp")]
+position = Vector2(-42, -638)
+
+[node name="FinalBoss" parent="." instance=ExtResource("4_h8ksj")]
+position = Vector2(230, 584)

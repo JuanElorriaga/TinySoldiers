@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://xo4dehlyacep"]
+[gd_scene load_steps=14 format=3 uid="uid://xo4dehlyacep"]
 
 [ext_resource type="Script" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd" id="1_hnbmv"]
 [ext_resource type="PackedScene" uid="uid://dgihke0p7btge" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn" id="2_xpm4p"]
+[ext_resource type="PackedScene" uid="uid://d1slwf2ev7qbi" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn" id="3_b1fec"]
 [ext_resource type="Texture2D" uid="uid://daakmyjvljoi4" path="res://Tiny Swords/Tiny Swords (Update 010)/Resources/Sheep/HappySheep_All.png" id="3_frv71"]
 [ext_resource type="Script" path="res://Tiny Swords/Tiny Swords (Update 010)/enemies/Comportamentos/followPlayer.gd" id="4_doy8y"]
 
@@ -64,6 +65,8 @@ motion_mode = 1
 script = ExtResource("1_hnbmv")
 health = 1
 death_prefab = ExtResource("2_xpm4p")
+drop_chance = 0.2
+drop_itens = Array[PackedScene]([ExtResource("3_b1fec")])
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oi23g")

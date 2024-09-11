@@ -1,9 +1,12 @@
-res://game_over_ui.tscn
-res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tres
-res://game_over_ui.gd
-res://player.gd
-res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy.gd
-res://main.tscn
 res://player.tscn
-res://game_manager.gd
-res://main.gd
+res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tres
+res://Tiny Swords/menuPrincipal.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/Sheep.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/game_ui.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/finalBoss.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/test_health.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn
+res://pos_menu.tscn
+res://main.tscn
+res://Tiny Swords/credits.tscn
+res://Tiny Swords/Tiny Swords (Update 010)/pos_menu.gd

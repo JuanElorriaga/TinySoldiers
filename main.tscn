@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cqs4kild5xwf5"]
+[gd_scene load_steps=20 format=3 uid="uid://cqs4kild5xwf5"]
 
 [ext_resource type="PackedScene" uid="uid://bfli1n641jiyy" path="res://player.tscn" id="1_v26id"]
 [ext_resource type="Script" path="res://main.gd" id="1_wamff"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://dty208rxb2jdf" path="res://Tiny Swords/Tiny Swords (Update 010)/System/mob_spawner.tscn" id="6_ok2n8"]
 [ext_resource type="Script" path="res://Tiny Swords/Tiny Swords (Update 010)/System/difficult_system.gd" id="6_wdcb6"]
 [ext_resource type="PackedScene" uid="uid://bncxk6w44p5jy" path="res://game_over_ui.tscn" id="8_4xt7o"]
+[ext_resource type="AudioStream" uid="uid://3qbu3qry2qhq" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/Adventure.mp3" id="10_j3gve"]
+[ext_resource type="PackedScene" uid="uid://cf0alwlg5hvfc" path="res://pos_menu.tscn" id="11_chukc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hhacm"]
 size = Vector2(384, 1963)
@@ -294,3 +296,11 @@ mob_spawner = NodePath("../MobSpawner")
 z_index = 1
 y_sort_enabled = true
 position = Vector2(594, 291)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_j3gve")
+volume_db = -9.838
+autoplay = true
+
+[node name="PosMenu" parent="." instance=ExtResource("11_chukc")]
+visible = false

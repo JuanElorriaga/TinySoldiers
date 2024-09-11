@@ -1,0 +1,22 @@
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/enemy1.tscn::c4a69ea26d8a4551c7a525c7740e92e0::1723766839::res://.godot/exported/133200997/export-f17ddaa3dc05a4d760b5ec9ac4d1f025-enemy1.scn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/finalBoss.tscn::e3ccda39528a8010b2fc57da991078b2::1723766840::res://.godot/exported/133200997/export-2a116dac405028b8b57a39e3c56ceed6-finalBoss.scn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/goblin.tscn::3539b7c18a1dfe91dcf85703cfad5fca::1723766839::res://.godot/exported/133200997/export-5d9e56c659dafcf00406d05692b8289c-goblin.scn
+res://Tiny Swords/Tiny Swords (Update 010)/enemies/Sheep.tscn::4fd4978ef582003049aa54b64bf4579c::1723766839::res://.godot/exported/133200997/export-4dbcace0f0313454a8d2f3908c7596f8-Sheep.scn
+res://Tiny Swords/Tiny Swords (Update 010)/misc/BigSkull.tscn::74ee7313e93bb3538d46c042a1dab980::1722122065::res://.godot/exported/133200997/export-1df5a62cdd063b55856d8fa84b00b631-BigSkull.scn
+res://Tiny Swords/Tiny Swords (Update 010)/misc/Damage_Digit.tscn::4bf4ca3abfd91032d85560cd35d6a9ec::1723766839::res://.godot/exported/133200997/export-f3f08404d9a6f5672fef558822ca03de-Damage_Digit.scn
+res://Tiny Swords/Tiny Swords (Update 010)/misc/goldmeat.tscn::22942d6a58666bd0c957ff0b28022eba::1722304502::res://.godot/exported/133200997/export-cb62df3f31969f637b59028ddd22eeb4-goldmeat.scn
+res://Tiny Swords/Tiny Swords (Update 010)/misc/meat.tscn::41535ea0391acabcdf9822036dfec4d9::1722298386::res://.godot/exported/133200997/export-386da83e3eb42c06f73ecd17670d7d87-meat.scn
+res://Tiny Swords/Tiny Swords (Update 010)/misc/skull.tscn::0c1d7914b686de6caf292e690ff5752e::1722122064::res://.godot/exported/133200997/export-cba26836138231534b6ad384027b601c-skull.scn
+res://Tiny Swords/Tiny Swords (Update 010)/System/mob_spawner.tscn::5c295f857dbdbd664c2f1b151c59205f::1723766839::res://.godot/exported/133200997/export-f9d4c2d615e42309e50466857929da44-mob_spawner.scn
+res://Tiny Swords/Tiny Swords (Update 010)/System/test_mobspawner.tscn::e5122bc50c2be48a386421a36e884d03::1722904832::res://.godot/exported/133200997/export-cb7c03b256c9c159ebde44dd2c410fd5-test_mobspawner.scn
+res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tres::5e8aad10e29123cee5d206de1ae79d53::1723766747::res://.godot/exported/133200997/export-ad83205caed6cb5d746a405cc2a1ee23-test_ui.res
+res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tscn::aec63cf3ce97cc30379586739273b6a4::1722904831::res://.godot/exported/133200997/export-a292b3736e6ad91590291a095917cb4f-test_ui.scn
+res://Tiny Swords/Tiny Swords (Update 010)/game_ui.tscn::f5cc4817aeb0b56bf2c83e3a3fe9e5c2::1723766840::res://.godot/exported/133200997/export-ba97fa8eaabd2615fb55b809b5d5babe-game_ui.scn
+res://Tiny Swords/Tiny Swords (Update 010)/test_health.tscn::ca24694c131ec6a460a5a539aa23b533::1722904831::res://.godot/exported/133200997/export-454847cbcf7d90df12a68356d9f381c7-test_health.scn
+res://Tiny Swords/credits.tscn::d35c18209ed5bfe63a600ad6a500dbf6::1723766839::res://.godot/exported/133200997/export-519af44c27d65a019778c1f4d161ac13-credits.scn
+res://Tiny Swords/menuPrincipal.tscn::a0104ab0285ea6769f6120bc766064c1::1723766838::res://.godot/exported/133200997/export-195cc2c5f000f36e607b9e2e3dee4b39-menuPrincipal.scn
+res://game_over_ui.tscn::ea6a43fb4ab7229f0b44580805f02a6c::1723684991::res://.godot/exported/133200997/export-bb6a332f2234f7848cbbabb813d3c116-game_over_ui.scn
+res://main.tscn::e0c0581144b8b18272d5d9f819228169::1723766838::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://player.tscn::c2998142c53ad8927f953342eeca1571::1723766838::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
+res://principal.tscn::860ad12544d4794c7cc9ecbb7022c0c7::1722904831::res://.godot/exported/133200997/export-c3974b60342a6e5133f0220f0b261955-principal.scn
+res://sprite.tscn::2303e8b0177a906714d31d81c62edf23::1722122063::res://.godot/exported/133200997/export-11d899cf0da2db2b919cf4effbcefe25-sprite.scn

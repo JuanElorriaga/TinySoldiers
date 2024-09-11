@@ -30,3 +30,13 @@ func restart_game():
 
 
 
+
+
+func _on_btn_play_again_pressed():
+	GameManager.reset()
+	get_tree().reload_current_scene()
+
+
+func _on_btn_main_menu_pressed():
+	get_tree().change_scene_to_file("res://Tiny Swords/menuPrincipal.tscn")
+	

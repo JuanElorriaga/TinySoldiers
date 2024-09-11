@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3qbu3qry2qhq"
+path="res://.godot/imported/Adventure.mp3-509e6969e2a74cf0d1986fdae0872397.mp3str"
+
+[deps]
+
+source_file="res://Tiny Swords/Tiny Swords (Update 010)/misc/Adventure.mp3"
+dest_files=["res://.godot/imported/Adventure.mp3-509e6969e2a74cf0d1986fdae0872397.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

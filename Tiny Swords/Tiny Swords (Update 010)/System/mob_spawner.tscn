@@ -17,6 +17,8 @@ script = ExtResource("1_iv44g")
 creatures = Array[PackedScene]([ExtResource("2_gnem8"), ExtResource("3_yso8t"), ExtResource("4_nr4jv")])
 
 [node name="Path2D" type="Path2D" parent="."]
+position = Vector2(8.64002, 9.70684)
+scale = Vector2(0.664356, 0.564572)
 curve = SubResource("Curve2D_m8oyo")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]

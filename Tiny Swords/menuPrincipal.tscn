@@ -1,0 +1,120 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgn217d2shnpi"]
+
+[ext_resource type="LabelSettings" uid="uid://c4s8iuxxkx4uv" path="res://Tiny Swords/Tiny Swords (Update 010)/UI/test_ui.tres" id="1_0gd4l"]
+[ext_resource type="Script" path="res://Tiny Swords/menuPrincipal.gd" id="1_l0sfr"]
+[ext_resource type="Texture2D" uid="uid://bi1irk4x7mc1h" path="res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Buildings/Castle/Castle_Purple.png" id="3_snx76"]
+[ext_resource type="Texture2D" uid="uid://cwbqo732cab4g" path="res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Buildings/House/House_Blue.png" id="4_a5hkh"]
+[ext_resource type="AudioStream" uid="uid://cvrykpj6tm2dx" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/SadSong1.mp3" id="5_u84ey"]
+
+[node name="MenuPrincipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l0sfr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+color = Color(5.64032e-09, 0.00870984, 0.00873433, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.121
+anchor_right = 0.5
+anchor_bottom = 0.121
+offset_left = -153.0
+offset_top = -24.408
+offset_right = 153.0
+offset_bottom = 24.592
+grow_horizontal = 2
+text = "Tiny heros Roglike
+"
+label_settings = ExtResource("1_0gd4l")
+
+[node name="BtnStart" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.444
+anchor_right = 0.5
+anchor_bottom = 0.444
+offset_left = -78.0
+offset_top = -77.212
+offset_right = 78.0
+offset_bottom = -0.212036
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.901961, 0.972549, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "START
+"
+flat = true
+
+[node name="BtnCredits" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -103.0
+offset_top = 25.0
+offset_right = 104.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.901961, 0.972549, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "CREDITS
+"
+flat = true
+
+[node name="BtnQuit" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.5
+offset_top = 147.5
+offset_right = 63.5
+offset_bottom = 224.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.901961, 0.972549, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "QUIT
+"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 706.0
+offset_top = 225.0
+offset_right = 1026.0
+offset_bottom = 481.0
+texture = ExtResource("3_snx76")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+offset_left = 222.0
+offset_top = 270.0
+offset_right = 350.0
+offset_bottom = 462.0
+texture = ExtResource("4_a5hkh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_u84ey")
+volume_db = -28.158
+pitch_scale = 1.38
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/BtnStart" to="." method="_on_btn_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/BtnCredits" to="." method="_on_btn_credits_pressed"]
+[connection signal="pressed" from="CanvasLayer/BtnQuit" to="." method="_on_btn_quit_pressed"]

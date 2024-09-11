@@ -76,6 +76,6 @@ func get_random_drop_item() -> PackedScene:
 			return drop_item
 		needle += drop_chance
 	
-	return drop_itens[1]
+	return drop_itens[2]
 	
 	

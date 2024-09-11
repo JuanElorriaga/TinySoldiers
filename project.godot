@@ -11,13 +11,17 @@ config_version=5
 [application]
 
 config/name="Tiny Heros roglike"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Tiny Swords/menuPrincipal.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*res://game_manager.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [input]
 

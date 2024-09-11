@@ -1,6 +1,8 @@
 class_name Player
 extends CharacterBody2D
 
+
+
 @export var speed: float = 3
 @export var sword_damage: int = 2
 @export var health: int = 100
@@ -13,6 +15,7 @@ extends CharacterBody2D
 @onready var swordArea: Area2D = $SwordArea
 @onready var HitBoxArea: Area2D = $HitBoxArea
 @onready var Health_ProgressBar: ProgressBar = $HealthProgressBar
+@onready var sword_sfx = $sword_sfx as AudioStreamPlayer
 
 var input_vector = Vector2(0,0)
 var is_running: bool = false
@@ -107,6 +110,8 @@ func attack() -> void:
 	
 	# Tocar animação
 	animation_player.play("attack_side_1")
+	sword_sfx.play()
+	
 	
 	# Configurar temporizador
 	attack_cooldown = 0.6
@@ -119,7 +124,7 @@ func deal_damage_to_enemies():
 	var bodies = swordArea.get_overlapping_bodies()
 	for body in bodies:
 		if body.is_in_group("enemies"):
-			var enemy: Enemy= body
+			var enemy: Enemy = body
 			
 			var directiontoenemy = (enemy.position - position).normalized()
 			var attack_direction: Vector2
@@ -151,6 +156,11 @@ func update_HitBox_detection(delta: float) -> void:
 			var enemy: Enemy = body
 			var damage_amount = 1
 			damage(damage_amount)
+			
+		#if body.is_in_group("finalBoss")
+			#var FinalBoss = body
+			#damage_amount = 10
+			#damage(damage_amount)
 
 func damage(amount: int) -> void:
 	if health <= 0: return
@@ -179,3 +189,6 @@ func heal(amount: int):
 	if health > max_health:
 		health = max_health
 		return health
+
+
+

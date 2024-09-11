@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dydltqbbj3jgk"
+path="res://.godot/imported/HitCtrl - Happy Pixie Town.mp3-c24fe037d9dae4a9734b879db8982d0b.mp3str"
+
+[deps]
+
+source_file="res://Tiny Swords/Tiny Swords (Update 010)/misc/HitCtrl - Happy Pixie Town.mp3"
+dest_files=["res://.godot/imported/HitCtrl - Happy Pixie Town.mp3-c24fe037d9dae4a9734b879db8982d0b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

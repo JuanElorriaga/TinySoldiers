@@ -3,6 +3,7 @@ extends Node
 
 @export var  game_ui: CanvasLayer
 @export var game_over_ui_template: PackedScene
+@onready var adventure_music = $adventure_music as AudioStreamPlayer
 
 
 func _ready():

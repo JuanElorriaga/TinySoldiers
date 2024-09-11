@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://8tefd1ulqnkk"
+path="res://.godot/imported/sword_sfx.wav-f0363de4ac23868f697709a33d5177e6.sample"
+
+[deps]
+
+source_file="res://Tiny Swords/Tiny Swords (Update 010)/misc/sword_sfx.wav"
+dest_files=["res://.godot/imported/sword_sfx.wav-f0363de4ac23868f697709a33d5177e6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

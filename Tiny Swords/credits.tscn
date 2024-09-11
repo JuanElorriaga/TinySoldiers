@@ -1,0 +1,88 @@
+[gd_scene load_steps=3 format=3 uid="uid://d137ukgb27c08"]
+
+[ext_resource type="Script" path="res://Tiny Swords/credits.gd" id="1_0und8"]
+[ext_resource type="AudioStream" uid="uid://dydltqbbj3jgk" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/HitCtrl - Happy Pixie Town.mp3" id="2_02txb"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0und8")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00801547, 4.6025e-07, 0.103007, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 5.0
+offset_top = 105.0
+offset_right = 1150.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 17
+text = "First I thank God, second my girlfriend Laís whom I love so much, 
+my friends from the Winx Club and family.
+
+This project was done as a learning experience during the Dio.me bootcamp, I'm really happy to make my first game!
+
+
+This project used free assets from Pixel frog, Tiny Swords, royatie free music by Jayvee Enaguas (HarvettFox96),
+licensed under a Creative Commons Attribution (CC BY) 3.0, 4.0 and later,
+or OpenGameArt Attribution (OGA BY) 3.0."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.687
+anchor_right = 0.5
+anchor_bottom = 0.687
+offset_left = -123.0
+offset_top = -11.176
+offset_right = 123.0
+offset_bottom = 11.824
+grow_horizontal = 2
+grow_vertical = 0
+text = "Made by Juan Elorriaga, in 2024."
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.853
+anchor_right = 0.5
+anchor_bottom = 0.853
+offset_left = -98.0
+offset_top = -15.744
+offset_right = 98.0
+offset_bottom = 15.256
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.815686, 1, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "RETURN TO MAIN MENU"
+flat = true
+
+[node name="Label3" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -68.0
+offset_top = 22.0
+offset_right = 68.0
+offset_bottom = 77.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.796078, 0.976471, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Credits
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_02txb")
+volume_db = -25.298
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

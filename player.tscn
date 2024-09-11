@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://bfli1n641jiyy"]
+[gd_scene load_steps=20 format=3 uid="uid://bfli1n641jiyy"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_excr8"]
 [ext_resource type="Texture2D" uid="uid://jvytqy6mfqon" path="res://Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_w7dq2"]
 [ext_resource type="PackedScene" uid="uid://bealttb18egkt" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/BigSkull.tscn" id="2_sypyc"]
+[ext_resource type="AudioStream" uid="uid://8tefd1ulqnkk" path="res://Tiny Swords/Tiny Swords (Update 010)/misc/sword_sfx.wav" id="4_1nhxl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5lcsc"]
 radius = 32.0
@@ -196,6 +197,7 @@ bg_color = Color(0.886275, 0.0235294, 0.266667, 1)
 position = Vector2(0, -1)
 motion_mode = 1
 script = ExtResource("1_excr8")
+sword_damage = 10
 death_prefab = ExtResource("2_sypyc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -236,3 +238,7 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_d70ay")
 value = 100.0
 rounded = true
 show_percentage = false
+
+[node name="sword_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1nhxl")
+volume_db = -7.429
