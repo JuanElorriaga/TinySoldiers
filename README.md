@@ -20,7 +20,7 @@ Este projeto foi desenvolvido com  **Godot** e tem como objetivo aplicar os conc
 
 ## 🎮 Mecânicas do Jogo
 
-- Controle um pequeno herói utilizando as teclas W,A,S,D.
+- Controle um pequeno herói utilizando as teclas W,A,S,D para se mover. Use a tecla C para atacar e o botão Start para pausar!
 - Sobreviva e supere seu recorde de tempo e monstros derrotados!
 
 ## 🛠️ Tecnologias Utilizadas
